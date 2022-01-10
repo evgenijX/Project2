@@ -528,4 +528,7 @@ input:invalid:required{
     .technology__blocks{
         justify-content: center;
     }
+    .landing__content-title{
+        font-size: 35px;
+    }
 }
