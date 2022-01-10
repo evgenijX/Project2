@@ -49,7 +49,7 @@
     flex-direction: column;
     align-items: center;
     row-gap: 40px;
-    width: 600px;
+    max-width: 600px;
     margin: 13% auto;
 
 }
@@ -219,7 +219,7 @@
     font-size: 36px;
     line-height: 43px;
     color: #FFFFFF;
-    width: 450px;
+    max-width: 450px;
 }
 .stayFocused__content-text{
     font-weight: normal;
@@ -325,6 +325,9 @@ input:invalid:required{
     color: #101010;
     padding: 3% 17%;
 }
+.futures__cards {
+    flex-wrap: wrap;
+}
 @media screen and (max-width: 1615px) {
     .easyToUse {
         margin: 5% 8%;
@@ -333,11 +336,6 @@ input:invalid:required{
     .futures {
         padding: 5% 8%;
     }
-
-    .futures__cards {
-        flex-wrap: wrap;
-    }
-
     .technology {
         padding: 5% 8%;
     }
@@ -364,8 +362,31 @@ input:invalid:required{
     .landing__header-mobile{
         display: flex;
     }
+    .easyToUse {
+        margin: 5% 2%;
+    }
+
+    .futures {
+        padding: 5% 2%;
+    }
+    .technology {
+        padding: 5% 2%;
+    }
+
+    .stayFocused {
+        padding: 5% 2%;
+    }
+
+    .contact {
+        padding: 5% 2%;
+    }
+
+    .footer {
+        padding: 5% 2%;
+    }
 }
 .landing__header-mobile-nav {
+    padding: 10px 2%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -448,4 +469,63 @@ input:invalid:required{
 
 #landing__header-mobile-ul a:hover {
     opacity: 1;
+}
+@media screen and (max-width: 729px){
+    .futures__cards{
+        justify-content: center;
+    }
+    .technology__blocks{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 623px){
+    .landing__content-title{
+        font-size: 50px;
+    }
+    .landing__content-subtitle{
+        font-size: 20px;
+        width: 70%;
+    }
+    .easyToUse__content-title{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 425px){
+    .easyToUse,
+    .stayFocused,
+    .footer
+    {
+        flex-wrap: wrap;
+    }
+    .easyToUse__content,
+    .stayFocused__content{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .easyToUse__content-text,
+    .stayFocused__content-text{
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .stayFocused__content-icons{
+        justify-content: center;
+    }
+    .contact{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .contact__content-text{
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+}
+@media screen and (max-width: 416px) {
+    .technology__blocks{
+        justify-content: center;
+    }
 }
